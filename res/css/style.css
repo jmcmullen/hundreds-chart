@@ -1,0 +1,285 @@
+@font-face{
+font-family:"VAG Rounded W01 Light";
+src:url("/res/font/8eb3a61c-2df5-402f-aacc-7733752abec6.eot?#iefix");
+src:url("/res/font/8eb3a61c-2df5-402f-aacc-7733752abec6.eot?#iefix") format("eot"),url("/res/font/67ca5d86-3357-4491-aa9f-6e7ff54b2e2e.woff") format("woff"),url("/res/font/888f8505-0e2c-41e8-af58-21279dda85e5.ttf") format("truetype"),url("/res/font/ca4650e2-5aa3-4755-9c6d-256cbb4f5115.svg#ca4650e2-5aa3-4755-9c6d-256cbb4f5115") format("svg");
+}
+
+body {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	backface-visibility:hidden;
+	-webkit-backface-visibility:hidden;
+	 overflow: hidden;
+	-ms-content-zooming: none;
+	-ms-touch-action:none;
+	font-family: "VAG Rounded W01 Light";
+}
+
+h1,h2,h3,h4,h5,h6,p {
+   line-height: 1.45;
+}
+
+.wrapper {
+    overflow-x: hidden; 
+    overflow-y: hidden;
+	overflow: hidden; 
+	max-width: inherit;
+}
+
+.box {
+	text-align: center;
+	width: 90px;
+	font-size: 20px;
+	cursor: pointer;
+	border: 4px solid #fff;
+	background-color: #e5e5e5;
+	color: #000;
+	opacity: 0;
+}
+
+.clicked {
+	background-color: #C2DFFF;
+}
+
+.header {
+	height: 60px;
+	background: transparent;
+}
+
+.header ul {
+	list-style: none;
+	display: inline-flex;
+	color: #fff;
+	font-size: 3em;
+	font-weight: 800;
+	padding: 4px 0;
+}
+
+.table {
+	margin-bottom: 0px !important;
+}
+
+.table-responsive {
+	margin-bottom: 0px !important;
+}
+
+.header li {
+	width: 40px;
+	text-align: center;
+	margin: 8px 5px;
+}
+
+.header li span {
+	width: 40px;
+	background: transparent;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 8px 12px;
+}
+
+.task {
+	display: table;
+	color: #fff;
+	margin: -40px auto auto;
+}
+
+.right {
+	background-color: #59FE7A;
+}
+
+.wrong {
+	background-color: #FE5959;
+}
+
+.header-content {
+	display: table;
+	width: 100%;
+}
+
+.hamburger {
+	display: inline-flex;
+	width: 45px;
+	height: 45px;
+	cursor: pointer;
+	margin: 8px 5px;
+	padding: 9px 12px;
+}
+
+.a1 {
+	background-color: #e51c23;
+	color: #fff;
+}
+
+.a2 {
+	background-color: #03a9f4;
+	color: #fff;
+}
+
+.a3 {
+	background-color: #ffeb3b;
+}
+
+.b1 {
+	background-color: #e91e63;
+	color: #fff;
+}
+
+.b2 {
+	background-color: #00bcd4;
+	color: #fff;
+}
+
+.b3 {
+	background-color: #ffc107;
+	color: #fff;
+}
+
+.c1 {
+	background-color: #9c27b0;
+	color: #fff;
+}
+
+.c2 {
+	background-color: #009688;
+	color: #fff;
+}
+
+.c3 {
+	background-color: #ff9800;
+}
+
+.d1 {
+	background-color: #673ab7;
+	color: #fff;
+}
+
+.d2 {
+	background-color: #259b24;
+	color: #fff;
+}
+
+.d3 {
+	background-color: #ff5722;
+	color: #fff;
+}
+
+.e1 {
+	background-color: #3f51b5;
+	color: #fff;
+}
+
+.e2 {
+	background-color: #8bc34a;
+}
+
+.e3 {
+	background-color: #000;
+	color: #fff;
+}
+
+.f1 {
+	background-color: #5677fc;
+}
+
+.f2 {
+	background-color: #cddc39;
+}
+
+.f3 {
+	background-color: #fff;
+}
+
+.cpick {
+	height: 30px;
+	width: 60px;
+	float: left;
+	display: block;
+	margin: 0 0 0 5px;
+}
+
+.icon-button {
+	position: relative;
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+	color: #fff;
+	margin: 8px;
+}
+
+.icon-button > core-icon {
+	transition: transform .2s cubic-bezier(0.4,0,0.2,1);
+	margin: 8px;
+}
+
+.icon-button:hover > core-icon {
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+.icon-button > paper-ripple {
+	overflow: hidden;
+	color: #646464;
+}
+
+.icon-button.red > core-icon::shadow path {
+	fill: #db4437;
+}
+
+.icon-button.red > paper-ripple {
+	color: #db4437;
+}
+
+.icon-button.blue > core-icon::shadow path {
+	fill: #4285f4;
+}
+
+.icon-button.blue > paper-ripple {
+	color: #4285f4;
+}
+
+menu {
+	color: red;
+}
+
+navigation {
+	background-color: #333 /* darkgrey */;
+}
+
+.menu-arrow {
+	position: relative;
+	display: inline-block;
+	width: 40px;
+  	height: 40px;
+  	cursor: pointer;
+	z-index: 100;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.menu-img {
+	padding: 5px 10px 0px 0px;
+	height: 45px;
+	float: left;
+	vertical-align: middle;
+}
+
+.colours {
+	padding-left: 25px;
+}
+
+.loading {
+	margin: auto;
+}
+
+.table {
+	background-color: #fff;
+}
+
+.menu-btn {
+	width: 100%;
+	cursoir: pointer;
+}
