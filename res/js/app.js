@@ -39,8 +39,8 @@ $(document).ready(function() {
 		}
 	});
 	
-    // Show hundreds chart.
-    createHundredsChart(10);
+    	// Show hundreds chart.
+    	createHundredsChart(10);
 	setHighlight("a1");
 	
 	// Resize the grid on screen rotation.
