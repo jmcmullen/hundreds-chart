@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+<<<<<<< HEAD
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <title>Hundreds Chart</title>
@@ -15,5 +16,210 @@
 <script src="res/js/app.js"></script>
 <script src="res/js/events.js"></script>
 
+=======
+<meta charset="UTF-8">
+<title>Hundreds Chart</title>
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1"/>
+
+<!-- JavaScript -->
+<script src="res/js/task.js"></script>
+<script src="res/js/tasks/task-even-numbers.js"></script>
+<script src="res/js/tasks/task-odd-numbers.js"></script>
+<script src="res/js/tasks/task-multiples-of.js"></script>
+<script src="res/js/tasks/task-higher-than.js"></script>
+<script src="res/js/tasks/task-lower-than.js"></script>
+<script src="res/js/tasks/task-numbers-between.js"></script>
+<script src="res/js/tasks/task-prime-numbers.js"></script>
+<script src="res/js/tasks/task-composite-numbers.js"></script>
+<script src="res/js/jquery-1.11.1.min.js"></script>
+<script src="res/js/bootstrap.min.js"></script>
+<script src="res/js/jquery.sidr.min.js"></script>
+<script src="res/js/fastclick.js"></script>
+<script src="res/js/event.js"></script>
+<script src="res/js/chart.js"></script>
+<script src="res/js/menu.js"></script>
+<script src="res/js/app.js"></script>
+<!-- /JavaScript -->
+
+<!-- CSS -->
+<link rel="stylesheet" href="res/css/bootstrap.min.css">
+<link rel="stylesheet" href="res/css/jquery.sidr.dark.css">
+<link rel="stylesheet" href="res/css/style.css">
+<!-- /CSS -->
+
+	
+</head>
+<body class="a1">
+<div class="wrapper">
+
+	<!-- Top Menu Bar -->
+	<div class="header">
+		<div class="header-content">
+			<div class="menu-arrow" id="menu-arrow">
+				<img src="res/img/menu-btn.png" class="menu-btn"/>
+			</div>
+			<h2 class="task"></h2>
+		</div>
+	</div>
+	<!-- /Top Menu Bar -->
+	
+	<!-- Hundreds Chart -->
+	<div class="table-responsive">
+		<table class="table">
+		<tbody class="chart">
+		</tbody>
+		</table>
+	</div>
+	<!-- /Hundreds Chart -->
+	
+	<!-- Slide Out Menu -->
+	<div id="sidr">
+		<ul class="main-menu">
+			<!-- Freestype Menu -->
+			<li id="menu-freestyle">
+				<img src="res/img/freestyle.svg" class="menu-img">
+				<h3>Freestyle</h3>
+			</li>
+			<!-- /Freestype Menu -->
+			
+			<!-- Challenge Menu -->
+			<li id="menu-challenge">
+				<img src="res/img/challenge.svg" class="menu-img">
+				<h3>Challenge</h3>
+				<ul class="dropdown">
+					<li onclick="startNewTask(0)">Even Numbers</li>
+					<li onclick="startNewTask(1)">Odd Numbers</li>
+					<li onclick="startNewTask(2)">Multiples</li>
+					<li onclick="startNewTask(3)">Lower Than</li>
+					<li onclick="startNewTask(4)">Greater Than</li>
+					<li onclick="startNewTask(5)">Between</li>
+					<li onclick="startNewTask(6)">Prime</li>
+					<li onclick="startNewTask(7)">Composite</li>
+					<li onclick="startNewTask('?')">Random</li>
+				</ul>
+			</li>
+			<!-- /Challenge Menu -->
+			
+			<!-- Highlight Menu -->
+			<li id="menu-highlight">
+				<img src="res/img/highlight.svg" class="menu-img">
+				<h3>Highlight</h3>
+				<ul class="dropdown">
+					<li onclick="highlightMultiples(1)">Multiples of 1</li>
+					<li onclick="highlightMultiples(2)">Multiples of 2</li>
+					<li onclick="highlightMultiples(3)">Multiples of 3</li>
+					<li onclick="highlightMultiples(4)">Multiples of 4</li>
+					<li onclick="highlightMultiples(5)">Multiples of 5</li>
+					<li onclick="highlightMultiples(6)">Multiples of 6</li>
+					<li onclick="highlightMultiples(7)">Multiples of 7</li>
+					<li onclick="highlightMultiples(8)">Multiples of 8</li>
+					<li onclick="highlightMultiples(9)">Multiples of 9</li>
+					<li onclick="highlightMultiples(10)">Multiples of 10</li>
+				</ul>
+			</li>
+			<!-- /Highlight Menu -->
+			
+			<!-- /Colour Menu -->
+			<li id="menu-colour">
+				<img src="res/img/colour.svg" class="menu-img">
+				<h3>Colour</h3>
+				<div class="dropdown colours">
+					<div onclick="setHighlight('a1')">
+						<span class="cpick a1"></span>
+					</div>
+					<div onclick="setHighlight('a2')">
+						<span class="cpick a2"></span>
+					</div>
+					<div onclick="setHighlight('a3')">
+						<span class="cpick a3"></span>
+					</div>
+					<br>
+					<div onclick="setHighlight('b1')">
+						<span class="cpick b1"></span>
+					</div>
+					<div onclick="setHighlight('b2')">
+						<span class="cpick b2"></span>
+					</div>
+					<div onclick="setHighlight('b3')">
+						<span class="cpick b3"></span>
+					</div>
+					<br>
+					<div onclick="setHighlight('c1')">
+						<span class="cpick c1"></span>
+					</div>
+					<div onclick="setHighlight('c2')">
+						<span class="cpick c2"></span>
+					</div>
+					<div onclick="setHighlight('c3')">
+						<span class="cpick c3"></span>
+					</div>
+					<br>
+					<div onclick="setHighlight('d1')">
+						<span class="cpick d1"></span>
+					</div>
+					<div onclick="setHighlight('d2')">
+						<span class="cpick d2"></span>
+					</div>
+					<div onclick="setHighlight('d3')">
+						<span class="cpick d3"></span>
+					</div>
+					<br>
+					<div onclick="setHighlight('e1')">
+						<span class="cpick e1"></span>
+					</div>
+					<div onclick="setHighlight('e2')">
+						<span class="cpick e2"></span>
+					</div>
+					<div onclick="setHighlight('e3')">
+						<span class="cpick e3"></span>
+					</div>
+					<br>
+					<div onclick="setHighlight('f1')">
+						<span class="cpick f1"></span>
+					</div>
+					<div onclick="setHighlight('f2')">
+						<span class="cpick f2"></span>
+					</div>
+					<div onclick="setHighlight('f3')">
+						<span class="cpick f3"></span>
+					</div>
+					<br>
+				</div>
+			</li>
+			<!-- /Colour Menu -->
+			
+			<!-- Grid Menu -->
+			<li id="menu-grid">
+				<img src="res/img/sound.svg" class="menu-img">
+				<h3>Grid</h3>
+				<ul class="dropdown">
+					<li onclick="createHundredsChart(10)">100</li>
+					<li onclick="createHundredsChart(11)">110</li>
+					<li onclick="createHundredsChart(12)">120</li>
+					<li onclick="createHundredsChart(13)">130</li>
+					<li onclick="createHundredsChart(14)">140</li>
+				</ul>
+			</li>
+			<!-- /Grid Menu -->
+			
+			<!-- /Clear Menu -->
+			<li id="menu-clear" onclick="clearHighlighted();">
+				<img src="res/img/clear.svg" class="menu-img">
+				<h3>Clear</h3>
+			</li>
+			<!-- /Clear Menu -->
+		</ul>
+	</div>
+	<!-- /Slide Out Menu -->
+	
+	<!-- Dialog Box -->
+	<div class="dialog hidden">
+		<h2 class="dialog-msg"></h2>
+		<img class="dialog-img" src=""/>
+		<button class="dialog-button"></button>
+	</div>
+	<!-- Dialog Box -->
+</div>
+>>>>>>> FETCH_HEAD
 </body>
 </html>
