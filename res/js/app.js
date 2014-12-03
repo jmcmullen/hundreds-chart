@@ -16,7 +16,6 @@ var mouseX, mouseY;
 // Toggled boxes while the mouse is down.
 var currentlyPressed = [];
 
-<<<<<<< HEAD
 // Create an new instance of a pixi stage.
 var interactive = true;
 var stage = new PIXI.Stage(0xFFFFFF, interactive);
@@ -125,37 +124,6 @@ createMenu();
 
 // Adjust sprites to match device resolution.
 function scale() {
-=======
-// All the colours to be chosen from.
-var colours = [
-	"a1", "a2", "a3",
-	"b1", "b2", "b3",
-	"c1", "c2", "c3",
-	"d1", "d2", "d3",
-	"e1", "e2", "e3",
-	"f1", "f2", "f3",
-];
-        
-// Once the pages has loaded ...
-$(document).ready(function() {
-	// Load fast click.
-    FastClick.attach(document.body);
-    
-	// Set up the menu.
-	$(".menu-arrow").sidr();
-    
-	// Make the menu update on click.
-	setSelectedMenu("menu-freestyle");
-	$(".main-menu li").click(function(event) {
-		if($(this).attr("id") != "menu-clear") {
-			setSelectedMenu($(this).attr("id"));
-		}
-	});
-	
-    	// Show hundreds chart.
-    	createHundredsChart(10);
-	setHighlight("a1");
->>>>>>> FETCH_HEAD
 	
 }
 
@@ -168,11 +136,6 @@ function animate() {
 	// Loop requesting a new frame.
 	requestAnimFrame(animate);
 	
-<<<<<<< HEAD
     // Render the stage.
     renderer.render(stage);
 }
-=======
-	document.addEventListener("deviceready", animateBoxes(), false);
-});
->>>>>>> FETCH_HEAD
